@@ -1,0 +1,32 @@
+{
+  "name": "@origamicore/projectmodels",
+  "version": "0.1.0",
+  "description": "origamicore project models",
+  "main": "./dist/Index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ./dist/sample/Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/origamicore/memory.git"
+  },
+  "keywords": [
+    "memory",
+    "origamicore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/origamicore/memory.git/issues"
+  },
+  "homepage": "https://github.com/origamicore/memory.git#readme",
+  "dependencies": {
+    "@origamicore/core": "^4.0.4",
+    "@types/node": "^20.4.3",
+    "typescript": "^5.1.6",
+    "uuid": "^9.0.0",
+    "websocket": "^1.0.34",
+    "ws": "^8.13.0"
+  }
+}
