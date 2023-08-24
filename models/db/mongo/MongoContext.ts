@@ -1,3 +1,4 @@
+import Tools from "../../../services/Tools";
 import MongoSchema from "./MongoSchema";
 
 export default class MongoContext
@@ -7,6 +8,8 @@ export default class MongoContext
     
     constructor(data:any)
     {
-        Object.assign(this,data);
+        if(!data)return;
+        if(data.name)this.name=data.name; 
+        this.schemas=Tools.toArray(data.schemas,MongoSchema);
     }
 }

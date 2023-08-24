@@ -6,6 +6,10 @@ export default class MongoSchema
     collectionName:string;
     constructor(data:any)
     {
-        Object.assign(this,data);
+        if(!data)return;
+        if(data.dbContext)this.dbContext=data.dbContext;
+        if(data.type)this.type=data.type;
+        if(data.name)this.name=data.name;
+        if(data.collectionName)this.collectionName=data.collectionName;
     }
 }

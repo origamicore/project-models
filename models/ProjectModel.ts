@@ -1,3 +1,4 @@
+import Tools from "../services/Tools";
 import StaticModule from "./StaticModules";
 import MongoContext from "./db/mongo/MongoContext";
 import ModuleModel from "./manual/ModuleModel";
@@ -13,13 +14,10 @@ export default class ProjectModel
     mongoContext:MongoContext[]=[];
     constructor(data)
     {
+        if(!data)return;
         Object.assign(this,data);
-    }
-    update()
-    {
-        for(let module of this.modules)
-        {
-            module.update()
-        }
-    }
+        this.modules=Tools.toArray(data.modules,ModuleModel);
+        this.staticModules=Tools.toArray(data.staticModules,StaticModule);
+        this.mongoContext=Tools.toArray(data.mongoContext,MongoContext);
+    } 
 }

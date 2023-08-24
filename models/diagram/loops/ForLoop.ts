@@ -8,4 +8,15 @@ export default class ForLoop extends ContainerModel
     end:string;
     step:number=1;
     container:DiagramContainer;
+    constructor(data:any)
+    {
+        if(!data)return;
+        super(data)
+        if(data.indexName)this.indexName=data.indexName;
+        if(data.start)this.start=data.start;
+        if(data.end)this.end=data.end;
+        if(data.step)this.step=data.step;
+        this.container=new DiagramContainer(data.container);     
+        
+    }
 }

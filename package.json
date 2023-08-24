@@ -9,24 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/origamicore/memory.git"
+    "url": "git+https://github.com/origamicore/project-models.git"
   },
   "keywords": [
-    "memory",
+    "projectmodel",
     "origamicore"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/origamicore/memory.git/issues"
+    "url": "https://github.com/origamicore/project-models/issues"
   },
-  "homepage": "https://github.com/origamicore/memory.git#readme",
+  "homepage": "https://github.com/origamicore/project-models#readme",
   "dependencies": {
-    "@origamicore/core": "^4.0.4",
     "@types/node": "^20.4.3",
-    "typescript": "^5.1.6",
-    "uuid": "^9.0.0",
-    "websocket": "^1.0.34",
-    "ws": "^8.13.0"
+    "typescript": "^5.1.6"
   }
 }
