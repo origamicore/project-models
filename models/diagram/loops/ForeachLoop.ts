@@ -8,8 +8,8 @@ export default class ForeachLoop extends ContainerModel
     container:DiagramContainer;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         if(data.objectName)this.objectName=data.objectName;
         if(data.array)this.array=data.array;
         this.container=new DiagramContainer(data.container);        

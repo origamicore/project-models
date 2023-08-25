@@ -8,8 +8,8 @@ export default class IfCondition extends ContainerModel
     elseCondition:ConditionContainer;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         this.conditions=Tools.toArray(data.conditions,ConditionContainer);
         this.elseCondition=new ConditionContainer(data.elseCondition)
     }

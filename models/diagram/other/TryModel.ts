@@ -8,8 +8,8 @@ export default class TryModel extends ContainerModel
     catchType:string;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         
         if(data.catchType)this.catchType=data.catchType;
         this.catchContainer=new DiagramContainer(data.catchContainer);   

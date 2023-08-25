@@ -8,8 +8,8 @@ export default class WhileLoop extends ContainerModel
     container:DiagramContainer;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         this.condition=new ConditionContainer(data.condition);   
         this.container=new DiagramContainer(data.container);   
         

@@ -10,8 +10,8 @@ export default class ForLoop extends ContainerModel
     container:DiagramContainer;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         if(data.indexName)this.indexName=data.indexName;
         if(data.start)this.start=data.start;
         if(data.end)this.end=data.end;

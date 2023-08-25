@@ -7,8 +7,8 @@ export default class VariableModel extends ContainerModel
     varType:string;
     constructor(data:any)
     {
-        if(!data)return;
         super(data)
+        if(!data)return;
         if(data.name)this.name=data.name;
         if(data.value)this.value=data.value;
         if(data.varType)this.varType=data.varType;
