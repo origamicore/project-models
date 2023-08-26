@@ -6,7 +6,7 @@ export default class IfCondition extends ContainerModel
 {
     conditions:ConditionContainer[]=[];
     elseCondition:ConditionContainer;
-    constructor(data:any)
+    constructor(data?:any)
     {
         super(data)
         if(!data)return;

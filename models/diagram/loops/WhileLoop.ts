@@ -6,7 +6,7 @@ export default class WhileLoop extends ContainerModel
 {
     condition:ConditionContainer
     container:DiagramContainer;
-    constructor(data:any)
+    constructor(data?:any)
     {
         super(data)
         if(!data)return;

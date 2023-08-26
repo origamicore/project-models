@@ -8,7 +8,7 @@ export default class EntityModel
     decorator:DecoratorModel;
     properies:PropertyModel[];
     functions:FunctionModel[]
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.properies=Tools.toArray(data.properies,PropertyModel);

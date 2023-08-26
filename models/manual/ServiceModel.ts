@@ -11,7 +11,7 @@ export default class ServiceModel
     variables:InputVariable[]=[];
     output:InputVariable;
     diagram:Diagram;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return; 
         if(data.name)this.name=data.name;

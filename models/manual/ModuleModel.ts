@@ -10,7 +10,7 @@ export default class ModuleModel
     functions:FunctionModel[]=[];
     services:ServiceModel[]=[];
     config:ModuleConfigModel
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         if(data.enable)this.enable=data.enable;

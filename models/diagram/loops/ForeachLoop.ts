@@ -6,7 +6,7 @@ export default class ForeachLoop extends ContainerModel
     objectName:string;
     array:string; 
     container:DiagramContainer;
-    constructor(data:any)
+    constructor(data?:any)
     {
         super(data)
         if(!data)return;

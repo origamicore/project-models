@@ -9,7 +9,7 @@ import VariableModel from "./other/VariableModel";
 export default class DiagramContainer
 {
     models: ContainerModel[];
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.models=[]

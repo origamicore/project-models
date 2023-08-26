@@ -3,7 +3,7 @@ export default class SingleCondition
     operation:'=='|'!'|'!='|''|'>'|'<'|'>='|'<='|'';
     leftSide:string;
     rightSide:string;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         if(data.operation)this.operation=data.operation;

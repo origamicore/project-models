@@ -13,7 +13,7 @@ export default class ProjectModel
     modules:ModuleModel[]=[];
     staticModules:StaticModule[]=[];
     mongoContext:MongoContext[]=[];
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return; 
         Object.assign(this,data);

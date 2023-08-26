@@ -3,7 +3,7 @@ export default class StaticModule
     enable:boolean=false;
     name:string;
     config:string;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         if(data.enable)this.enable=data.enable

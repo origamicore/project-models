@@ -9,7 +9,7 @@ export default class FunctionModel
     variables:InputVariable[]=[];
     output:InputVariable;
     diagram:Diagram;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.variables=Tools.toArray(data.variables,InputVariable);

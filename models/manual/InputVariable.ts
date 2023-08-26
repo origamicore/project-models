@@ -9,7 +9,7 @@ export default class InputVariable
     basicType:string;
     isRequired:boolean=true;
     type:InputType;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.decorator=new DecoratorModel(data.decorator)

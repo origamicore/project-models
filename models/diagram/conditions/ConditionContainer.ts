@@ -5,7 +5,7 @@ export default class ConditionContainer
 {
     condition:ConditionModel;
     container:DiagramContainer;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.condition=new ConditionModel(data.condition)

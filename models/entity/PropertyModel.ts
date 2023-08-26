@@ -8,7 +8,7 @@ export default class PropertyModel
     type:string;
     defaultValue:string;
     isArray:boolean;
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return;
         this.decorator=new DecoratorModel(data.decorator) 

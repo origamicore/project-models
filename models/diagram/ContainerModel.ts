@@ -1,7 +1,7 @@
 export default class ContainerModel
 { 
     type:ContainerType
-    constructor(data:any)
+    constructor(data?:any)
     {
         if(!data)return; 
         this.type=data.type
@@ -15,5 +15,5 @@ export enum ContainerType
     While=4,
     Try=5,
     Variable=6
-    
+
 }
