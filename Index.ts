@@ -24,6 +24,9 @@ import { InputType } from "./models/manual/InputTypes";
 import InputVariable from "./models/manual/InputVariable";
 import ModuleModel from "./models/manual/ModuleModel";
 import ServiceModel from "./models/manual/ServiceModel";
+import EndpointConfig, { EndpointConnection, EndpointConnectionType, JwtConfig, LimitModel, RedisSessionConfig } from "./models/staticModules/EndpointConfig";
+import MongoConfig, { BackupModel, MongoConnection } from "./models/staticModules/MongoConfig";
+import RedisConfig, { RedisConnection } from "./models/staticModules/RedisConfig";
 
 export default ProjectModel
 export {
@@ -51,5 +54,17 @@ export {
     ServiceModel,
     DecoratorModel,
     ResponseType,
-    StaticModule
+    StaticModule,
+    EndpointConfig,
+    EndpointConnection,
+    EndpointConnectionType, 
+    LimitModel,
+    RedisSessionConfig,
+    JwtConfig,
+    MongoConfig,
+    MongoConnection,
+    BackupModel,
+    RedisConfig,
+    RedisConnection,
+
 }

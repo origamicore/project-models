@@ -1,6 +1,7 @@
 import Tools from "../../services/Tools";
 import DecoratorModel from "../DecoratorModel";
 import Diagram from "../diagram/Diagram";
+import EntityModel from "../entity/EntityModel";
 import InputVariable from "./InputVariable";
 
 export default class ServiceModel

@@ -11,6 +11,7 @@ class EntityModel {
     constructor(data) {
         if (!data)
             return;
+        this.name = data.name;
         this.properies = Tools_1.default.toArray(data.properies, PropertyModel_1.default);
         this.functions = Tools_1.default.toArray(data.functions, FunctionModel_1.default);
         this.decorator = new DecoratorModel_1.default(data.decorator);

@@ -2,7 +2,7 @@ export default class StaticModule
 {
     enable:boolean=false;
     name:string;
-    config:string;
+    config:any;
     constructor(data?:any)
     {
         if(!data)return;

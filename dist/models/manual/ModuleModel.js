@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Tools_1 = __importDefault(require("../../services/Tools"));
 const ModuleConfigModel_1 = __importDefault(require("../config/ModuleConfigModel"));
+const EntityModel_1 = __importDefault(require("../entity/EntityModel"));
 const FunctionModel_1 = __importDefault(require("./FunctionModel"));
 const ServiceModel_1 = __importDefault(require("./ServiceModel"));
 class ModuleModel {
@@ -12,6 +13,7 @@ class ModuleModel {
         this.enable = false;
         this.functions = [];
         this.services = [];
+        this.models = [];
         if (!data)
             return;
         if (data.enable)
@@ -21,6 +23,7 @@ class ModuleModel {
         this.functions = Tools_1.default.toArray(data.functions, FunctionModel_1.default);
         this.services = Tools_1.default.toArray(data.services, ServiceModel_1.default);
         this.config = new ModuleConfigModel_1.default(data.config);
+        this.models = Tools_1.default.toArray(data.models, EntityModel_1.default);
     }
 }
 exports.default = ModuleModel;

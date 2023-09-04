@@ -1,5 +1,6 @@
 import Tools from "../../services/Tools";
 import ModuleConfigModel from "../config/ModuleConfigModel";
+import EntityModel from "../entity/EntityModel";
 import FunctionModel from "./FunctionModel";
 import ServiceModel from "./ServiceModel";
 
@@ -10,6 +11,7 @@ export default class ModuleModel
     functions:FunctionModel[]=[];
     services:ServiceModel[]=[];
     config:ModuleConfigModel
+    models:EntityModel[]=[];
     constructor(data?:any)
     {
         if(!data)return;
@@ -18,5 +20,6 @@ export default class ModuleModel
         this.functions=Tools.toArray(data.functions,FunctionModel);
         this.services=Tools.toArray(data.services,ServiceModel);
         this.config=new ModuleConfigModel(data.config)
+        this.models=Tools.toArray(data.models,EntityModel);
     } 
 }

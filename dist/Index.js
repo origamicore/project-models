@@ -1,9 +1,32 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StaticModule = exports.ResponseType = exports.DecoratorModel = exports.ServiceModel = exports.ModuleModel = exports.InputVariable = exports.InputType = exports.FunctionModel = exports.PropertyModel = exports.EntityModel = exports.DiagramContainer = exports.Diagram = exports.ContainerModel = exports.VariableModel = exports.TryModel = exports.WhileLoop = exports.ForeachLoop = exports.ForLoop = exports.SingleCondition = exports.IfCondition = exports.ConditionModel = exports.ConditionContainer = exports.MongoSchema = exports.MongoContext = exports.ModuleConfigModel = void 0;
+exports.RedisConnection = exports.RedisConfig = exports.BackupModel = exports.MongoConnection = exports.MongoConfig = exports.JwtConfig = exports.RedisSessionConfig = exports.LimitModel = exports.EndpointConnectionType = exports.EndpointConnection = exports.EndpointConfig = exports.StaticModule = exports.ResponseType = exports.DecoratorModel = exports.ServiceModel = exports.ModuleModel = exports.InputVariable = exports.InputType = exports.FunctionModel = exports.PropertyModel = exports.EntityModel = exports.DiagramContainer = exports.Diagram = exports.ContainerModel = exports.VariableModel = exports.TryModel = exports.WhileLoop = exports.ForeachLoop = exports.ForLoop = exports.SingleCondition = exports.IfCondition = exports.ConditionModel = exports.ConditionContainer = exports.MongoSchema = exports.MongoContext = exports.ModuleConfigModel = void 0;
 const DecoratorModel_1 = __importDefault(require("./models/DecoratorModel"));
 exports.DecoratorModel = DecoratorModel_1.default;
 const ProjectModel_1 = __importDefault(require("./models/ProjectModel"));
@@ -55,5 +78,19 @@ const ModuleModel_1 = __importDefault(require("./models/manual/ModuleModel"));
 exports.ModuleModel = ModuleModel_1.default;
 const ServiceModel_1 = __importDefault(require("./models/manual/ServiceModel"));
 exports.ServiceModel = ServiceModel_1.default;
+const EndpointConfig_1 = __importStar(require("./models/staticModules/EndpointConfig"));
+exports.EndpointConfig = EndpointConfig_1.default;
+Object.defineProperty(exports, "EndpointConnection", { enumerable: true, get: function () { return EndpointConfig_1.EndpointConnection; } });
+Object.defineProperty(exports, "EndpointConnectionType", { enumerable: true, get: function () { return EndpointConfig_1.EndpointConnectionType; } });
+Object.defineProperty(exports, "JwtConfig", { enumerable: true, get: function () { return EndpointConfig_1.JwtConfig; } });
+Object.defineProperty(exports, "LimitModel", { enumerable: true, get: function () { return EndpointConfig_1.LimitModel; } });
+Object.defineProperty(exports, "RedisSessionConfig", { enumerable: true, get: function () { return EndpointConfig_1.RedisSessionConfig; } });
+const MongoConfig_1 = __importStar(require("./models/staticModules/MongoConfig"));
+exports.MongoConfig = MongoConfig_1.default;
+Object.defineProperty(exports, "BackupModel", { enumerable: true, get: function () { return MongoConfig_1.BackupModel; } });
+Object.defineProperty(exports, "MongoConnection", { enumerable: true, get: function () { return MongoConfig_1.MongoConnection; } });
+const RedisConfig_1 = __importStar(require("./models/staticModules/RedisConfig"));
+exports.RedisConfig = RedisConfig_1.default;
+Object.defineProperty(exports, "RedisConnection", { enumerable: true, get: function () { return RedisConfig_1.RedisConnection; } });
 exports.default = ProjectModel_1.default;
 //# sourceMappingURL=Index.js.map
