@@ -1,11 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class MongoSchema {
+class MongoCollection {
     constructor(data) {
         if (!data)
             return;
-        if (data.dbContext)
-            this.dbContext = data.dbContext;
         if (data.type)
             this.type = data.type;
         if (data.name)
@@ -14,5 +12,5 @@ class MongoSchema {
             this.collectionName = data.collectionName;
     }
 }
-exports.default = MongoSchema;
-//# sourceMappingURL=MongoSchema.js.map
+exports.default = MongoCollection;
+//# sourceMappingURL=MongoCollection.js.map

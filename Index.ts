@@ -2,9 +2,9 @@ import DecoratorModel from "./models/DecoratorModel";
 import ProjectModel from "./models/ProjectModel";
 import { ResponseType } from "./models/ResponseType";
 import StaticModule from "./models/StaticModules";
-import ModuleConfigModel from "./models/config/ModuleConfigModel";
-import MongoContext from "./models/db/mongo/MongoContext";
-import MongoSchema from "./models/db/mongo/MongoSchema";
+import ModuleConfigModel from "./models/config/ModuleConfigModel"; 
+import MongoCollection from "./models/db/mongo/MongoCollection";
+import MongoDatabase from "./models/db/mongo/MongoDatabase";  
 import ContainerModel from "./models/diagram/ContainerModel";
 import Diagram from "./models/diagram/Diagram";
 import DiagramContainer from "./models/diagram/DiagramContainer";
@@ -31,8 +31,8 @@ import RedisConfig, { RedisConnection } from "./models/staticModules/RedisConfig
 export default ProjectModel
 export {
     ModuleConfigModel,
-    MongoContext,
-    MongoSchema,
+    MongoDatabase,
+    MongoCollection,
     ConditionContainer,
     ConditionModel,
     IfCondition,

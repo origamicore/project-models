@@ -1,6 +1,6 @@
 import Tools from "../services/Tools";
-import StaticModule from "./StaticModules";
-import MongoContext from "./db/mongo/MongoContext";
+import StaticModule from "./StaticModules"; 
+import MongoDatabase from "./db/mongo/MongoDatabase";
 import ModuleModel from "./manual/ModuleModel";
 
 export default class ProjectModel
@@ -12,7 +12,7 @@ export default class ProjectModel
     name:string;
     modules:ModuleModel[]=[];
     staticModules:StaticModule[]=[];
-    mongoContext:MongoContext[]=[];
+    mongoDatabses:MongoDatabase[]=[];
     constructor(data?:any)
     {
         if(!data)return; 
@@ -20,6 +20,6 @@ export default class ProjectModel
         this._id=this.id;
         this.modules=Tools.toArray(data.modules,ModuleModel);
         this.staticModules=Tools.toArray(data.staticModules,StaticModule);
-        this.mongoContext=Tools.toArray(data.mongoContext,MongoContext);
+        this.mongoDatabses=Tools.toArray(data.mongoDatabses,MongoDatabase);
     } 
 }
