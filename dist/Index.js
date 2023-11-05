@@ -26,7 +26,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RedisConnection = exports.RedisConfig = exports.BackupModel = exports.MongoConnection = exports.MongoConfig = exports.JwtConfig = exports.RedisSessionConfig = exports.LimitModel = exports.EndpointConnectionType = exports.EndpointConnection = exports.EndpointConfig = exports.StaticModule = exports.ResponseType = exports.DecoratorModel = exports.ServiceModel = exports.ModuleModel = exports.InputVariable = exports.InputType = exports.FunctionModel = exports.PropertyModel = exports.EntityModel = exports.DiagramContainer = exports.Diagram = exports.ContainerModel = exports.VariableModel = exports.TryModel = exports.WhileLoop = exports.ForeachLoop = exports.ForLoop = exports.SingleCondition = exports.IfCondition = exports.ConditionModel = exports.ConditionContainer = exports.MongoCollection = exports.MongoDatabase = exports.ModuleConfigModel = void 0;
+exports.MongoCollectionModel = exports.DbConnection = exports.CollectionModel = exports.CollectionIndex = exports.RedisConnection = exports.RedisConfig = exports.BackupModel = exports.MongoConnection = exports.MongoConfig = exports.JwtConfig = exports.RedisSessionConfig = exports.LimitModel = exports.EndpointConnectionType = exports.EndpointConnection = exports.EndpointConfig = exports.StaticModule = exports.ResponseType = exports.DecoratorModel = exports.ServiceModel = exports.ModuleModel = exports.InputVariable = exports.InputType = exports.FunctionModel = exports.PropertyModel = exports.EntityModel = exports.DiagramContainer = exports.Diagram = exports.ContainerModel = exports.VariableModel = exports.TryModel = exports.WhileLoop = exports.ForeachLoop = exports.ForLoop = exports.SingleCondition = exports.IfCondition = exports.ConditionModel = exports.ConditionContainer = exports.MongoCollection = exports.MongoDatabase = exports.ModuleConfigModel = void 0;
 const DecoratorModel_1 = __importDefault(require("./models/DecoratorModel"));
 exports.DecoratorModel = DecoratorModel_1.default;
 const ProjectModel_1 = __importDefault(require("./models/ProjectModel"));
@@ -40,6 +40,14 @@ const MongoCollection_1 = __importDefault(require("./models/db/mongo/MongoCollec
 exports.MongoCollection = MongoCollection_1.default;
 const MongoDatabase_1 = __importDefault(require("./models/db/mongo/MongoDatabase"));
 exports.MongoDatabase = MongoDatabase_1.default;
+const CollectionIndex_1 = __importDefault(require("./models/dbUi/CollectionIndex"));
+exports.CollectionIndex = CollectionIndex_1.default;
+const CollectionModel_1 = __importDefault(require("./models/dbUi/CollectionModel"));
+exports.CollectionModel = CollectionModel_1.default;
+const DbConnection_1 = __importDefault(require("./models/dbUi/DbConnection"));
+exports.DbConnection = DbConnection_1.default;
+const MongoCollectionModel_1 = __importDefault(require("./models/dbUi/MongoCollectionModel"));
+exports.MongoCollectionModel = MongoCollectionModel_1.default;
 const ContainerModel_1 = __importDefault(require("./models/diagram/ContainerModel"));
 exports.ContainerModel = ContainerModel_1.default;
 const Diagram_1 = __importDefault(require("./models/diagram/Diagram"));

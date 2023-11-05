@@ -5,6 +5,10 @@ import StaticModule from "./models/StaticModules";
 import ModuleConfigModel from "./models/config/ModuleConfigModel"; 
 import MongoCollection from "./models/db/mongo/MongoCollection";
 import MongoDatabase from "./models/db/mongo/MongoDatabase";  
+import CollectionIndex from "./models/dbUi/CollectionIndex";
+import CollectionModel from "./models/dbUi/CollectionModel";
+import DbConnection from "./models/dbUi/DbConnection";
+import MongoCollectionModel from "./models/dbUi/MongoCollectionModel";
 import ContainerModel from "./models/diagram/ContainerModel";
 import Diagram from "./models/diagram/Diagram";
 import DiagramContainer from "./models/diagram/DiagramContainer";
@@ -37,7 +41,7 @@ export {
     ConditionModel,
     IfCondition,
     SingleCondition,
-    ForLoop, 
+    ForLoop,
     ForeachLoop,
     WhileLoop,
     TryModel,
@@ -57,7 +61,7 @@ export {
     StaticModule,
     EndpointConfig,
     EndpointConnection,
-    EndpointConnectionType, 
+    EndpointConnectionType,
     LimitModel,
     RedisSessionConfig,
     JwtConfig,
@@ -66,5 +70,8 @@ export {
     BackupModel,
     RedisConfig,
     RedisConnection,
-
-}
+    CollectionIndex,
+    CollectionModel,
+    DbConnection,
+    MongoCollectionModel
+};

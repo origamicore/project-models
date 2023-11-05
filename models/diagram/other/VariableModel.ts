@@ -11,7 +11,6 @@ export default class VariableModel extends ContainerModel
         if(!data)return;
         if(data.name)this.name=data.name;
         if(data.value)this.value=data.value;
-        if(data.varType)this.varType=data.varType;
-        
+        if(data.varType)this.varType=data.varType; 
     }
 }
